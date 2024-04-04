@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <main>
-      <img src="https://ajvillalobos.com/avatar.jpeg" alt="profile-photo" />
+      <img src="avatar.jpeg" alt="profile-photo" />
       <p>
         Hello! I'm AJ Villalobos, a web developer from the Philippines. I
         specialized in building web apps from scratch and using{" "}
