@@ -30,6 +30,11 @@ function App() {
             Github
           </a>
         </li>
+        <li>
+          <a href="https://s3.ap-southeast-1.amazonaws.com/com.ajvillalobos/resume05022024.pdf" target="_blank" download>
+            Resume
+          </a>
+        </li>
       </ul>
     </main>
   );
