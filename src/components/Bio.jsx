@@ -1,3 +1,5 @@
+
+
 const Bio = () => {
   return (
     <section className="bio">
