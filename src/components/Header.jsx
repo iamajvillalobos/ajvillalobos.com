@@ -1,4 +1,6 @@
-const Header = () => {
+import React from 'react';
+
+const Header = ({ onExport }) => {
   return (
     <header className="header">
       <h1>AJ Villalobos</h1>
@@ -30,6 +32,16 @@ const Header = () => {
             </svg>
             GitHub
           </a>
+          <button
+            onClick={onExport}
+            className="social-link export-button"
+            aria-label="Export page as PDF"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+            </svg>
+            Export PDF
+          </button>
         </div>
       </div>
     </header>
