@@ -4,19 +4,22 @@
   --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'DM Mono', ui-monospace, monospace;
 
-  /* Coffee palette */
-  --color-espresso: #3E2723;
-  --color-coffee: #5D4037;
+  /* Dark coffee palette */
+  --color-dark-roast: #1A1512;
+  --color-espresso: #2D1F1A;
+  --color-coffee: #3E2C23;
+  --color-mocha: #5D4037;
   --color-latte: #A1887F;
-  --color-cream: #FFF8E1;
-  --color-foam: #FFFFFF;
+  --color-cream: #D7CCC8;
+  --color-foam: #EFEBE9;
   --color-caramel: #FFAB40;
 
-  --color-bg: var(--color-cream);
-  --color-text: var(--color-espresso);
-  --color-text-secondary: var(--color-coffee);
-  --color-text-tertiary: var(--color-latte);
-  --color-border: #EFEBE9;
+  --color-bg: var(--color-dark-roast);
+  --color-card: var(--color-espresso);
+  --color-text: var(--color-cream);
+  --color-text-secondary: var(--color-latte);
+  --color-text-tertiary: #8D6E63;
+  --color-border: rgba(161, 136, 127, 0.2);
   --color-accent: var(--color-caramel);
 
   --spacing-xs: 0.25rem;
@@ -29,7 +32,8 @@
 
   --border-radius: 8px;
   --max-width: 720px;
-  --shadow: 0 2px 8px rgba(62, 39, 35, 0.08);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -43,7 +47,7 @@ body {
   font-size: 15px;
   line-height: 1.65;
   color: var(--color-text);
-  background: linear-gradient(180deg, var(--color-cream) 0%, #FFF3E0 100%);
+  background: linear-gradient(180deg, var(--color-dark-roast) 0%, #0D0907 100%);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -63,23 +67,25 @@ body {
   top: 2rem;
   right: 2rem;
   font-size: 2rem;
-  opacity: 0.15;
+  opacity: 0.1;
   animation: steam 3s ease-in-out infinite;
+  filter: grayscale(1) brightness(1.5);
 }
 
 @keyframes steam {
-  0%, 100% { transform: translateY(0px); opacity: 0.15; }
-  50% { transform: translateY(-10px); opacity: 0.25; }
+  0%, 100% { transform: translateY(0px); opacity: 0.1; }
+  50% { transform: translateY(-10px); opacity: 0.2; }
 }
 
 /* Header Styles */
 .header {
   margin-bottom: var(--spacing-3xl);
   padding: var(--spacing-xl);
-  background: var(--color-foam);
+  background: var(--color-card);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  border-left: 4px solid var(--color-accent);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
 }
 
 .header h1 {
@@ -88,20 +94,20 @@ body {
   margin-bottom: var(--spacing-sm);
   letter-spacing: -0.03em;
   line-height: 1.2;
-  color: var(--color-espresso);
+  color: var(--color-text);
 }
 
 .header h2 {
   font-size: 1.125rem;
   font-weight: 500;
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
 }
 
 .subtitle {
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  color: var(--color-latte);
+  color: var(--color-text-tertiary);
   margin-bottom: var(--spacing-lg);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -133,7 +139,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  color: var(--color-latte);
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
@@ -144,7 +150,7 @@ body {
 
 .social-link:hover {
   color: var(--color-accent);
-  background: rgba(255, 171, 64, 0.1);
+  background: rgba(255, 171, 64, 0.15);
 }
 
 .social-link svg {
@@ -156,11 +162,12 @@ body {
   margin-bottom: var(--spacing-3xl);
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
   padding: var(--spacing-xl);
-  background: var(--color-foam);
+  background: var(--color-card);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
   position: relative;
 }
 
@@ -171,7 +178,7 @@ body {
   left: 20px;
   font-size: 4rem;
   color: var(--color-accent);
-  opacity: 0.2;
+  opacity: 0.15;
   font-family: Georgia, serif;
 }
 
@@ -184,7 +191,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: var(--spacing-xl);
-  color: var(--color-espresso);
+  color: var(--color-text);
   letter-spacing: -0.02em;
   display: inline-block;
   padding-bottom: var(--spacing-xs);
@@ -201,33 +208,18 @@ body {
 
 .experience-item {
   padding: var(--spacing-lg);
-  background: var(--color-foam);
+  background: var(--color-card);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
-}
-
-.experience-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--color-accent);
-  transform: scaleY(0);
-  transition: transform 0.3s ease;
 }
 
 .experience-item:hover {
-  transform: translateX(4px);
-  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.12);
-}
-
-.experience-item:hover::before {
-  transform: scaleY(1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent);
 }
 
 .experience-header {
@@ -239,7 +231,7 @@ body {
   font-size: 0.8125rem;
   font-weight: 500;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-latte);
+  color: var(--color-text-tertiary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -247,14 +239,14 @@ body {
 .experience-role {
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--color-espresso);
+  color: var(--color-text);
   margin-bottom: var(--spacing-xs);
   letter-spacing: -0.02em;
 }
 
 .experience-location {
   font-size: 0.9375rem;
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
   font-weight: 500;
 }
@@ -262,7 +254,7 @@ body {
 .experience-description {
   font-size: 0.9375rem;
   line-height: 1.65;
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
 }
 
 /* Project Styles */
@@ -275,16 +267,16 @@ body {
 
 .project-item {
   padding: var(--spacing-lg);
-  background: var(--color-foam);
+  background: var(--color-card);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
-  border-top: 3px solid transparent;
 }
 
 .project-item:hover {
-  border-top-color: var(--color-accent);
-  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.12);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
 }
 
@@ -292,7 +284,7 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-espresso);
+  color: var(--color-text);
   letter-spacing: -0.02em;
 }
 
@@ -300,7 +292,7 @@ body {
   font-size: 0.9375rem;
   line-height: 1.65;
   margin-bottom: var(--spacing-md);
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
 }
 
 /* Tag Styles */
@@ -313,17 +305,17 @@ body {
 .tag {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
   padding: var(--spacing-xs) var(--spacing-md);
   border: 1px solid var(--color-border);
   border-radius: 20px;
-  background: rgba(255, 248, 225, 0.6);
+  background: rgba(93, 64, 55, 0.3);
   transition: all 0.2s ease;
 }
 
 .tag:hover {
   background: var(--color-accent);
-  color: var(--color-foam);
+  color: var(--color-dark-roast);
   border-color: var(--color-accent);
   transform: translateY(-1px);
 }
@@ -337,15 +329,16 @@ body {
 
 .skill-category {
   padding: var(--spacing-lg);
-  background: var(--color-foam);
+  background: var(--color-card);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
 }
 
 .skill-category h4 {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--color-espresso);
+  color: var(--color-text);
   margin-bottom: var(--spacing-md);
   letter-spacing: -0.01em;
   padding-bottom: var(--spacing-xs);
@@ -361,7 +354,7 @@ body {
 
 .skill-category li {
   font-size: 0.875rem;
-  color: var(--color-coffee);
+  color: var(--color-text-secondary);
   line-height: 1.5;
   padding-left: var(--spacing-md);
   position: relative;
@@ -379,7 +372,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  color: var(--color-latte);
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
@@ -393,7 +386,7 @@ body {
 
 .export-button:hover {
   color: var(--color-accent);
-  background: rgba(255, 171, 64, 0.1);
+  background: rgba(255, 171, 64, 0.15);
 }
 
 .export-button svg {
