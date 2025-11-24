@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   const projects = [
     {
-      title: "TimeIn - Time Tracking & Payroll System",
+      title: "Timekeep - Time Tracking & Payroll System",
       description:
         "Comprehensive Rails 8 multi-tenant time tracking and payroll management system for Philippine businesses. Features photo-based kiosk authentication, automated Philippine statutory compliance (SSS, PhilHealth, Pag-IBIG, withholding tax), overtime approval workflows, and PDF payslip generation. Built with Hotwire for real-time updates and Solid adapters (no Redis dependency).",
       tags: [
