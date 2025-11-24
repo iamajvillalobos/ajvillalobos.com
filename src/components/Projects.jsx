@@ -85,7 +85,7 @@ const Projects = () => {
 
   return (
     <section className="section">
-      <h3>Other Works</h3>
+      <h3>Side Projects</h3>
       <ul className="project-list">
         {projects.map((project, index) => (
           <ProjectItem
