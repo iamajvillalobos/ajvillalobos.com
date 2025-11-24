@@ -18,8 +18,10 @@ function App() {
     <div className="container">
       <Header onExport={handleExport} />
       <Skills />
-      <Experience />
-      <Projects />
+      <div className="two-column-grid">
+        <Experience />
+        <Projects />
+      </div>
     </div>
   );
 }
