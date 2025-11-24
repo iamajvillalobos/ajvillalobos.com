@@ -189,17 +189,9 @@ body {
   flex-shrink: 0;
 }
 
-/* Two Column Grid */
-.two-column-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-3xl);
-}
-
 /* Section Styles */
 .section {
-  margin-bottom: 0;
+  margin-bottom: var(--spacing-3xl);
 }
 
 .section h3 {
@@ -425,15 +417,6 @@ body {
 
   .header-identity h1 {
     font-size: 1.75rem;
-  }
-
-  .two-column-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
-  }
-
-  .section {
-    margin-bottom: var(--spacing-xl);
   }
 
   .skills-grid {
