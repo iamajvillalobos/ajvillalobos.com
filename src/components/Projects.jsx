@@ -3,51 +3,53 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   const projects = [
     {
-      title: "Bruskoffee Admin",
+      title: "Bruskoffee Admin Platform",
       description:
-        "Inventory system built for a specialty coffee shop. Features include automatic low-stock alerts, ingredient-based costing, sales reporting, and 3rd-party POS + delivery report integration.",
+        "Full-featured Rails 7 inventory management system for specialty coffee shop operations. Architected with Solid Queue for background jobs, Avo Admin for rapid UI development, and custom API integrations for POS and delivery services. Implemented automated low-stock alerts, ingredient-based cost calculations, and comprehensive sales analytics with ActiveRecord queries.",
       tags: [
-        "ruby on rails 7",
-        "heroku",
-        "tailwind",
-        "api integration",
-        "avo admin",
-        "devise",
+        "rails 7",
         "solid queue",
+        "avo admin",
+        "api integration",
+        "postgresql",
+        "devise",
+        "tailwind css",
+        "heroku",
       ],
     },
     {
-      title: "Medical Laboratory Admin",
+      title: "Medical Laboratory Management System",
       description:
-        "Inventory and access control system for a medical lab. Tracks perishable goods, sales, and stock movement with user authorizations and audit history.",
+        "Rails 8 application managing inventory, access control, and audit trails for medical laboratory. Built with Pundit for authorization, Paper Trail for comprehensive audit logging, and custom Rails validators for perishable goods tracking. Features role-based permissions, stock movement tracking, and detailed reporting.",
       tags: [
-        "ruby on rails 8",
-        "heroku",
-        "tailwind",
-        "devise",
+        "rails 8",
         "pundit",
         "paper trail",
-      ],
-    },
-    {
-      title: "Privacy-focused Marketing Tool",
-      description:
-        "A simple Bitly alternative focused on privacy and GDPR compliance. Originally launched as a paid tool and later acquired by an early user.",
-      tags: [
-        "ruby on rails 5",
+        "devise",
+        "postgresql",
+        "tailwind css",
         "heroku",
-        "bootstrap",
-        "aws",
-        "paddle",
-        "postmark",
-        "subdomains",
       ],
     },
     {
-      title: "Clover Ruby Gem",
+      title: "Privacy-Focused Link Shortener (Acquired)",
       description:
-        "An open-source Ruby wrapper for a major POS system's REST API. Though now archived, the gem was widely forked and used in production integrations.",
-      tags: ["ruby", "rubygems", "api integration"],
+        "GDPR-compliant Rails 5 SaaS alternative to Bitly with multi-tenant architecture using subdomain routing. Integrated Paddle for subscription payments, AWS for asset storage, and Postmark for transactional emails. Successfully launched as paid product and acquired by early user. Featured custom analytics without user tracking.",
+      tags: [
+        "rails 5",
+        "multi-tenancy",
+        "paddle payments",
+        "aws s3",
+        "postmark",
+        "bootstrap",
+        "heroku",
+      ],
+    },
+    {
+      title: "Clover POS Ruby Gem (Open Source)",
+      description:
+        "Open-source Ruby wrapper for Clover POS REST API, providing clean interface for inventory, orders, and payment operations. Designed with Faraday middleware, comprehensive RSpec test coverage, and proper error handling. Widely adopted in production environments before being archived (50+ forks).",
+      tags: ["ruby", "faraday", "rspec", "rubygems", "api client", "open source"],
     },
   ];
 

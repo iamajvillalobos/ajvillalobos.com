@@ -2,6 +2,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Bio from "./components/Bio";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import { exportAsPDF } from "./utils/pdfExport";
@@ -13,11 +14,12 @@ function App() {
     const root = document.getElementById("root");
     exportAsPDF(root, { filename: "ajvillalobos.com.pdf" });
   };
-  
+
   return (
     <div className="container">
       <Header onExport={handleExport} />
       <Bio />
+      <Skills />
       <Experience />
       <Projects />
     </div>
