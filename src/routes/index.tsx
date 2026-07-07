@@ -1,8 +1,83 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-const resumePath = '/aj-villalobos-ai-resume.pdf'
+import { site, structuredData } from '../site'
 
-export const Route = createFileRoute('/')({ component: ResumePage })
+export const Route = createFileRoute('/')({
+  head: () => ({
+    meta: [
+      {
+        title: site.title,
+      },
+      {
+        name: 'description',
+        content: site.description,
+      },
+      {
+        name: 'robots',
+        content: 'index, follow',
+      },
+      {
+        property: 'og:type',
+        content: 'profile',
+      },
+      {
+        property: 'og:title',
+        content: site.title,
+      },
+      {
+        property: 'og:description',
+        content: site.socialDescription,
+      },
+      {
+        property: 'og:url',
+        content: site.canonicalUrl,
+      },
+      {
+        property: 'og:site_name',
+        content: site.shortTitle,
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        name: 'twitter:title',
+        content: site.title,
+      },
+      {
+        name: 'twitter:description',
+        content: site.socialDescription,
+      },
+    ],
+    links: [
+      {
+        rel: 'canonical',
+        href: site.canonicalUrl,
+      },
+      {
+        rel: 'alternate',
+        type: 'application/pdf',
+        title: 'AJ Villalobos resume PDF',
+        href: site.resumeUrl,
+      },
+      {
+        rel: 'me',
+        href: site.githubUrl,
+      },
+      {
+        rel: 'me',
+        href: site.linkedinUrl,
+      },
+    ],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify(structuredData),
+      },
+    ],
+  }),
+  component: ResumePage,
+})
 
 function ResumePage() {
   return (
@@ -13,10 +88,11 @@ function ResumePage() {
         </h1>
         <p className="tagline">Senior Ruby on Rails Engineer</p>
         <nav className="site-nav" aria-label="Site">
+          <a href="#profile">Profile</a>
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
-          <a href="mailto:hello@ajvillalobos.com">Email</a>
-          <a className="resume-link" href={resumePath} download>
+          <a href={`mailto:${site.email}`}>Email</a>
+          <a className="resume-link" href={site.resumePath} download>
             Resume (PDF)
           </a>
         </nav>
@@ -29,6 +105,48 @@ function ResumePage() {
         development, using Claude Code, agentic loops, and parallel agents
         without lowering the bar for what reaches production.
       </p>
+
+      <section id="profile" className="sec">
+        <h2>Profile</h2>
+
+        <div className="when">Best fit</div>
+        <div className="what">
+          <h3>Production Rails engineer for remote product teams</h3>
+          <p>
+            I am based in Iloilo City, Philippines and work remotely with
+            companies building long-lived Rails systems. The strongest fit is a
+            team that needs senior backend judgment, steady delivery, and
+            practical AI-assisted development rather than prototype-only output.
+          </p>
+          <ul className="fact-list" aria-label="Profile highlights">
+            <li>Twelve years of production Ruby on Rails experience.</li>
+            <li>
+              Current senior Rails work with GraphQL, Next.js, DocuSign, and
+              booking-import tooling at Lavanda.
+            </li>
+            <li>
+              Domain history across fintech, healthtech, SaaS, aged care,
+              childcare, property management, and Philippine SME software.
+            </li>
+            <li>
+              AI workflow experience with Claude Code, custom skills,
+              self-verifying agent loops, and parallel agents in git worktrees.
+            </li>
+          </ul>
+        </div>
+
+        <div className="when">Useful for</div>
+        <div className="what">
+          <h3>Problems I can help with</h3>
+          <p>
+            Teams usually bring me in when they need a senior Ruby on Rails
+            engineer for remote product work, a Rails developer in or near the
+            Philippines, GraphQL-backed feature delivery, or a production-minded
+            engineer who can use AI-assisted development without turning the
+            codebase into a prototype.
+          </p>
+        </div>
+      </section>
 
       <section id="work" className="sec">
         <h2>Work</h2>
@@ -100,7 +218,7 @@ function ResumePage() {
             POS integrations and a Messenger bot at Tanda, booking platforms and
             private gems at Aelogica, Rails and Ember work at Proudcloud, and
             Rails features at YouSource. Full history in the{' '}
-            <a href={resumePath} download>
+            <a href={site.resumePath} download>
               PDF resume
             </a>
             .
@@ -192,7 +310,7 @@ function ResumePage() {
             education, and contact details in a printable page.
           </p>
           <p>
-            <a className="cta" href={resumePath} download>
+            <a className="cta" href={site.resumePath} download>
               Download the resume (PDF) &darr;
             </a>
           </p>
@@ -201,11 +319,15 @@ function ResumePage() {
 
       <footer className="closing">
         <p>
-          <a href="mailto:hello@ajvillalobos.com">hello@ajvillalobos.com</a>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
           <span className="sep">&middot;</span>
-          <a href="https://github.com/iamajvillalobos">GitHub</a>
+          <a href={site.githubUrl} rel="me">
+            GitHub
+          </a>
           <span className="sep">&middot;</span>
-          <a href="https://www.linkedin.com/in/aj-villalobos/">LinkedIn</a>
+          <a href={site.linkedinUrl} rel="me">
+            LinkedIn
+          </a>
           <span className="sep">&middot;</span>
           <span>Iloilo City, Philippines</span>
         </p>

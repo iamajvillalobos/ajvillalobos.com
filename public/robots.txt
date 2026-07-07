@@ -1,3 +1,15 @@
-# https://www.robotstxt.org/robotstxt.html
+# Search and AI-search crawlers may index the public profile and resume.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI's model-training crawler is separate from ChatGPT search crawling.
+User-agent: GPTBot
+Disallow: /
+
 User-agent: *
 Disallow:
+
+Sitemap: https://ajvillalobos.com/sitemap.xml

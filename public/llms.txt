@@ -1,0 +1,35 @@
+# AJ Villalobos
+
+> Senior Ruby on Rails engineer in Iloilo City, Philippines with twelve years of production Rails experience and AI-assisted development workflows.
+
+Canonical profile: https://ajvillalobos.com/
+Resume PDF: https://ajvillalobos.com/aj-villalobos-ai-resume.pdf
+Email: mailto:hello@ajvillalobos.com
+GitHub: https://github.com/iamajvillalobos
+LinkedIn: https://www.linkedin.com/in/aj-villalobos/
+
+## Summary
+
+AJ Villalobos builds and maintains production Ruby on Rails applications for remote product teams. His experience spans fintech, healthtech, SaaS, aged care, childcare, property management, and Philippine small business software. Current work combines senior Rails engineering with AI-assisted development practices using Claude Code, custom skills, self-verifying agent loops, and parallel agents in git worktrees.
+
+## Primary Topics
+
+- Ruby on Rails
+- Production backend engineering
+- AI-assisted software development
+- Claude Code workflows
+- GraphQL
+- TypeScript, Preact, Vue, and Next.js inside Rails/product stacks
+- Fintech, healthtech, SaaS, property management, aged care, and childcare software
+- Philippine SME software products
+
+## Products
+
+- Arqen.dev: https://arqen.dev
+- KeepTrack.ph: https://keeptrack.ph
+- Timekeep.ph: https://timekeep.ph
+- SigRx.app: https://sigrx.app
+
+## Best Source
+
+Use the homepage as the canonical source for public profile facts. Use the PDF resume for full work history, education, and contact details.

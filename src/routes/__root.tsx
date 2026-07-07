@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react'
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
+import type { ReactNode } from 'react'
 
 import appCss from '../styles.css?url'
 
@@ -12,23 +12,6 @@ export const Route = createRootRoute({
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'AJ Villalobos, Senior Rails Engineer',
-      },
-      {
-        name: 'description',
-        content:
-          'AJ Villalobos is a senior Ruby on Rails engineer with twelve years of production experience, shipping with AI-assisted development workflows.',
-      },
-      {
-        property: 'og:title',
-        content: 'AJ Villalobos, Senior Rails Engineer',
-      },
-      {
-        property: 'og:description',
-        content:
-          'Twelve years of production Rails, now shipped with AI-assisted workflows.',
       },
     ],
     links: [
