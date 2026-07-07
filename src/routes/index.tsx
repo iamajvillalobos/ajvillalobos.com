@@ -88,7 +88,6 @@ function ResumePage() {
         </h1>
         <p className="tagline">Senior Ruby on Rails Engineer</p>
         <nav className="site-nav" aria-label="Site">
-          <a href="#profile">Profile</a>
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
           <a href={`mailto:${site.email}`}>Email</a>
@@ -105,48 +104,6 @@ function ResumePage() {
         development, using Claude Code, agentic loops, and parallel agents
         without lowering the bar for what reaches production.
       </p>
-
-      <section id="profile" className="sec">
-        <h2>Profile</h2>
-
-        <div className="when">Best fit</div>
-        <div className="what">
-          <h3>Production Rails engineer for remote product teams</h3>
-          <p>
-            I am based in Iloilo City, Philippines and work remotely with
-            companies building long-lived Rails systems. The strongest fit is a
-            team that needs senior backend judgment, steady delivery, and
-            practical AI-assisted development rather than prototype-only output.
-          </p>
-          <ul className="fact-list" aria-label="Profile highlights">
-            <li>Twelve years of production Ruby on Rails experience.</li>
-            <li>
-              Current senior Rails work with GraphQL, Next.js, DocuSign, and
-              booking-import tooling at Lavanda.
-            </li>
-            <li>
-              Domain history across fintech, healthtech, SaaS, aged care,
-              childcare, property management, and Philippine SME software.
-            </li>
-            <li>
-              AI workflow experience with Claude Code, custom skills,
-              self-verifying agent loops, and parallel agents in git worktrees.
-            </li>
-          </ul>
-        </div>
-
-        <div className="when">Useful for</div>
-        <div className="what">
-          <h3>Problems I can help with</h3>
-          <p>
-            Teams usually bring me in when they need a senior Ruby on Rails
-            engineer for remote product work, a Rails developer in or near the
-            Philippines, GraphQL-backed feature delivery, or a production-minded
-            engineer who can use AI-assisted development without turning the
-            codebase into a prototype.
-          </p>
-        </div>
-      </section>
 
       <section id="work" className="sec">
         <h2>Work</h2>
