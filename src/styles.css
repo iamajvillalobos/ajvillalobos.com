@@ -1,0 +1,251 @@
+
+@import "tailwindcss";
+
+:root {
+  --paper: #fcfbf8;
+  --ink: #1c1b1a;
+  --muted: #6e6b66;
+  --line: #e4e1da;
+  --ruby: #8e2c3c;
+  --sans:
+    "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas,
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--ruby);
+  color: var(--paper);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--muted);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition:
+    color 120ms ease,
+    text-decoration-color 120ms ease;
+}
+
+a:hover {
+  color: var(--ruby);
+  text-decoration-color: var(--ruby);
+}
+
+a:focus-visible {
+  border-radius: 1px;
+  outline: 2px solid var(--ruby);
+  outline-offset: 3px;
+}
+
+.page {
+  max-width: 52rem;
+  margin-left: clamp(1.25rem, 7vw, 6.5rem);
+  margin-right: clamp(1.25rem, 4vw, 3rem);
+  padding: clamp(2.75rem, 8vw, 5.5rem) 0 clamp(3rem, 8vw, 5rem);
+}
+
+.name {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: clamp(2.2rem, 6.5vw, 3.1rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+
+.name .dot {
+  color: var(--ruby);
+}
+
+.tagline {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-style: italic;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin-top: 1.9rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.site-nav a {
+  text-decoration-color: var(--line);
+}
+
+.site-nav .resume-link {
+  color: var(--ruby);
+  text-decoration-color: var(--ruby);
+}
+
+.intro {
+  max-width: 38rem;
+  margin: clamp(2.5rem, 6vw, 3.75rem) 0 0;
+  font-size: clamp(1.1rem, 2.4vw, 1.3rem);
+  letter-spacing: 0;
+  line-height: 1.55;
+}
+
+.intro em {
+  font-style: italic;
+}
+
+.sec {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  column-gap: 2.75rem;
+  row-gap: 2rem;
+  margin-top: clamp(3rem, 7vw, 4.25rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.sec > h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.when {
+  grid-column: 1;
+  padding-top: 0.3rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+}
+
+.what {
+  grid-column: 2;
+  max-width: 36rem;
+}
+
+.what h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+
+.what .role {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.what p {
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+}
+
+.what p:first-child {
+  margin-top: 0;
+}
+
+.cta {
+  color: var(--ruby);
+  font-weight: 500;
+  text-decoration-color: var(--ruby);
+}
+
+.closing {
+  margin-top: clamp(3rem, 7vw, 4.25rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.closing p {
+  margin: 0;
+}
+
+.closing p + p {
+  margin-top: 0.6rem;
+}
+
+.closing .sep {
+  padding: 0 0.35rem;
+  color: var(--line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none;
+  }
+}
+
+@media (max-width: 40rem) {
+  .sec {
+    display: block;
+  }
+
+  .sec > h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .when {
+    margin-bottom: 0.3rem;
+    padding-top: 0;
+  }
+
+  .what {
+    margin-bottom: 1.9rem;
+  }
+
+  .what:last-child {
+    margin-bottom: 0;
+  }
+}
