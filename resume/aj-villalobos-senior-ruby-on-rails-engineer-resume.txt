@@ -6,11 +6,12 @@ Senior Ruby on Rails engineer with 12 years of production experience building we
 business workflows across fintech, healthtech, SaaS, aged care, childcare, property management, and SME software. Remote
 product engineer for teams in the US, UK, and Australia. Uses AI-assisted development with Claude Code and agent workflows
 while keeping production standards high: tests, readable diffs, maintainable architecture, and clear ownership.
+
 WORK EXPERIENCE
 Lavanda                                                                                                          Oct. 2025 - Present
 Senior Ruby on Rails Developer                                                                              United Kingdom, Remote
-- Ship Rails, GraphQL, and Next.js features for a property management and bookings platform used by build-to-rent, co-living, and
-  multifamily operators.
+- Deliver booking and leasing workflows that help property operators move reservations, leases, and tenant operations through
+  production with less manual coordination.
 - Maintain and extend DocuSign lease-signing workflows, including Sender Fields and booking-signing support.
 - Build booking-import tooling for new-client data migration and operational onboarding.
 - Use Claude Code, custom skills, self-verifying agent loops, and parallel agents in git worktrees for day-to-day engineering.
@@ -67,6 +68,7 @@ Clover Ruby Gem                                                                 
 EDUCATION
 John B. Lacson Foundation Maritime University                                                                          2010 - 2013
 Bachelor of Science in Information Technology, Web Development                                                           Iloilo City
+
 TECHNOLOGIES
 Backend: Ruby, Ruby on Rails, GraphQL, REST APIs, service objects, background jobs, Sidekiq, PostgreSQL, API design, legacy
 modernization
