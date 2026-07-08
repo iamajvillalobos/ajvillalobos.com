@@ -8,8 +8,9 @@ export const site = {
   socialDescription:
     'Senior Ruby on Rails engineer with twelve years of production Rails experience, now shipping with AI-assisted workflows.',
   email: 'hello@ajvillalobos.com',
-  resumePath: '/aj-villalobos-ai-resume.pdf',
-  resumeUrl: 'https://ajvillalobos.com/aj-villalobos-ai-resume.pdf',
+  resumePath: '/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf',
+  resumeUrl:
+    'https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf',
   githubUrl: 'https://github.com/iamajvillalobos',
   linkedinUrl: 'https://www.linkedin.com/in/aj-villalobos/',
   arqenUrl: 'https://arqen.dev',

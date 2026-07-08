@@ -3,7 +3,7 @@
 > Senior Ruby on Rails engineer in Iloilo City, Philippines with twelve years of production Rails experience and AI-assisted development workflows.
 
 Canonical profile: https://ajvillalobos.com/
-Resume PDF: https://ajvillalobos.com/aj-villalobos-ai-resume.pdf
+Resume PDF: https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf
 Email: mailto:hello@ajvillalobos.com
 GitHub: https://github.com/iamajvillalobos
 LinkedIn: https://www.linkedin.com/in/aj-villalobos/
