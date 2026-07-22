@@ -346,6 +346,39 @@ a:focus-visible {
   white-space: pre;
 }
 
+/* Standalone fact / definition, not a pull quote */
+.post-body .post-note {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.1rem 1.05rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ruby);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--line) 22%, var(--paper));
+}
+
+.post-body .post-note + h2 {
+  margin-top: 1.5rem;
+}
+
+.post-body .post-note > :last-child {
+  margin-bottom: 0;
+}
+
+.post-body .post-note-label {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.post-body .post-note p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
 .post-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
