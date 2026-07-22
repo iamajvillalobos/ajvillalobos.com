@@ -63,11 +63,14 @@ function ResumePage() {
       </header>
 
       <p className="intro">
-        I have spent <em>twelve years</em> building production Rails
-        applications for fintech, healthtech, and SaaS teams in the US, UK, and
-        Australia. These days I pair that experience with AI-assisted
-        development, using Claude Code, agentic loops, and parallel agents
-        without lowering the bar for what reaches production.
+        I&rsquo;m a senior Ruby on Rails engineer with <em>twelve years</em> of
+        experience building production software for fintech, healthtech, and
+        SaaS teams across the US, UK, and Australia. I work closely with
+        engineering and product teams to turn operational needs into reliable
+        software. While Rails is my primary stack, I&rsquo;m comfortable getting
+        oriented in other languages and use AI coding tools as a practical part
+        of development. I&rsquo;m open to full-time senior engineering
+        opportunities, especially Rails and backend product work.
       </p>
 
       <section id="work" className="sec">
@@ -78,12 +81,14 @@ function ResumePage() {
           <h3>Lavanda</h3>
           <p className="role">Senior Ruby on Rails Developer &middot; UK, remote</p>
           <p>
-            I build features for a property management and bookings platform
-            used by build-to-rent and co-living operators (Rails, GraphQL,
-            Next.js). Recent work includes the DocuSign lease-signing
-            integration and booking-import tooling for onboarding new clients.
-            Day to day I lean on Claude Code: custom skills, self-verifying
-            agent loops, and parallel agents in git worktrees.
+            I build booking and leasing features for a property management
+            platform used by build-to-rent and co-living operators. Recent work
+            includes making its DocuSign integration more flexible by moving
+            agreement preparation from application-defined prefilled fields to
+            Sender Fields configured by clients, and building booking-import
+            tooling for onboarding new clients. I also work directly with
+            product and implementation managers to investigate questions,
+            clarify technical constraints, and help resolve client concerns.
           </p>
         </div>
 
@@ -157,10 +162,10 @@ function ResumePage() {
             <a href="https://arqen.dev">Arqen.dev</a>
           </h3>
           <p>
-            The home of my self-funded products: software that actually works
-            for Philippine businesses, built with firsthand knowledge of local
-            compliance rather than theoretical knowledge. The three products
-            below ship under it.
+            My self-funded software studio for Philippine businesses. I design,
+            build, operate, and support its products end to end, covering
+            product decisions, engineering, infrastructure, and customer
+            support.
           </p>
         </div>
 
@@ -170,10 +175,10 @@ function ResumePage() {
             <a href="https://keeptrack.ph">KeepTrack.ph</a>
           </h3>
           <p>
-            Inventory management for Philippine small businesses: real-time
-            stock tracking, expiry alerts, purchase orders and supplier
-            management, and recipe costing for restaurants, pharmacies, and
-            retail. Tagline: stop guessing what&rsquo;s in stock.
+            Inventory management software used by four Philippine businesses,
+            with stock tracking, expiry alerts, purchase orders, supplier
+            management, and recipe costing. The product is maintained and
+            supported for its existing customers.
           </p>
         </div>
 
@@ -183,10 +188,14 @@ function ResumePage() {
             <a href="https://timekeep.ph">Timekeep.ph</a>
           </h3>
           <p>
-            Payroll, attendance, and scheduling for Philippine SMEs. One-click
-            payroll with SSS, PhilHealth, Pag-IBIG, and withholding tax computed
-            automatically, plus a facial-verification attendance kiosk and an
-            employee self-service portal.
+            My primary self-funded product: payroll, attendance, and scheduling
+            software for Philippine businesses. I designed, built, operate, and
+            support it end to end. The platform has recorded more than 17,000
+            attendance entries and generated over 1,300 payslips across 89
+            finalized payroll runs, representing more than ₱6.9 million in gross
+            payroll calculations. It handles Philippine requirements including
+            government contributions, withholding tax, holiday pay, scheduling,
+            facial-verification attendance, and employee self-service.
           </p>
         </div>
 
@@ -196,10 +205,10 @@ function ResumePage() {
             <a href="https://sigrx.app">SigRx.app</a>
           </h3>
           <p>
-            A digital prescription pad for Philippine doctors. Prescriptions
-            formatted for standard pad sizes, patient records, a pre-loaded
-            medicine library, and medical certificates on matching letterhead.
-            Currently in private beta.
+            A digital prescription and patient-record application originally
+            built for a doctor operating a laboratory. It is in use today while
+            I validate whether the product should be expanded for more
+            Philippine doctors.
           </p>
         </div>
 
