@@ -203,7 +203,7 @@ Ask it to fix it, then keep working here.`}</code>
         Amp is not the only way to run coding agents remotely. Alternatives
         include{' '}
         <a
-          href="https://developers.openai.com/codex"
+          href="https://developers.openai.com/codex/cloud"
           rel="noopener noreferrer"
         >
           OpenAI Codex
