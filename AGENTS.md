@@ -72,10 +72,12 @@ Before editing files for a substantial task:
 
 ## Deployment
 
-- Nitro is configured as the agnostic Node-compatible deployment adapter.
+- Production runs on Cloudflare Workers as `ajvillalobos`, serving `ajvillalobos.com` and `www.ajvillalobos.com` through the routes in `wrangler.jsonc`.
+- When asked to ship, commit and push, or deploy the site, follow `.agents/skills/shipping-site/SKILL.md` as the source of truth. In Amp, invoke it with `/shipping-site`.
+- The shipping workflow must verify the specific change at its affected public URL. For exact content checks, use `.agents/skills/shipping-site/scripts/verify-live.mjs`; a successful deployment or HTTP `200` alone is not sufficient verification.
 - Build with `mise exec -- pnpm build`.
-- The production server output is `.output/server/index.mjs`; run it with `node .output/server/index.mjs` on a Node-compatible host.
-- Host-specific Nitro presets can be configured later if a concrete target is chosen.
+- Deploy with `mise exec -- pnpm deploy`.
+- Nitro writes the deployable Worker to `.output`; Wrangler uses the generated redirected configuration under `.output/server/wrangler.json`.
 
 ## Known Gotchas
 
