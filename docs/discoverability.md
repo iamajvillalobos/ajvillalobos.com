@@ -5,7 +5,8 @@ Use this after the Cloudflare deployment is live at `https://ajvillalobos.com`.
 ## Launch Checks
 
 - Confirm `https://ajvillalobos.com/` returns SSR HTML with the profile text visible in the initial response.
-- Confirm `https://ajvillalobos.com/sitemap.xml` returns XML and lists the homepage plus PDF resume.
+- Confirm `https://ajvillalobos.com/sitemap.xml` returns XML and lists the homepage, blog index, blog posts, and PDF resume.
+- Confirm `https://ajvillalobos.com/blog` and a sample post return SSR HTML.
 - Confirm `https://ajvillalobos.com/robots.txt` includes `Sitemap: https://ajvillalobos.com/sitemap.xml`.
 - Confirm `https://ajvillalobos.com/llms.txt` returns plain text.
 - Confirm `https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf` returns a valid PDF.

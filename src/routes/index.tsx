@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Link, createFileRoute } from '@tanstack/react-router'
 
 import { site, structuredData } from '../site'
 
@@ -90,6 +90,7 @@ function ResumePage() {
         <nav className="site-nav" aria-label="Site">
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
+          <Link to="/blog">Blog</Link>
           <a href={`mailto:${site.email}`}>Email</a>
           <a className="resume-link" href={site.resumePath} download>
             Resume (PDF)
