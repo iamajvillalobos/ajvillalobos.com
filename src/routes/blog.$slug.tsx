@@ -1,6 +1,7 @@
 import { Link, createFileRoute, notFound } from '@tanstack/react-router'
 
 import { formatPostDate, getPost, posts } from '../blog/posts'
+import { socialMeta } from '../lib/social-meta'
 import { site } from '../site'
 
 export const Route = createFileRoute('/blog/$slug')({
@@ -23,59 +24,17 @@ export const Route = createFileRoute('/blog/$slug')({
     const title = `${post.title} · ${site.shortTitle}`
 
     return {
-      meta: [
-        {
-          title,
-        },
-        {
-          name: 'description',
-          content: post.description,
-        },
-        {
-          name: 'robots',
-          content: 'index, follow',
-        },
-        {
-          name: 'author',
-          content: site.shortTitle,
-        },
-        {
-          property: 'og:type',
-          content: 'article',
-        },
-        {
-          property: 'og:title',
-          content: post.title,
-        },
-        {
-          property: 'og:description',
-          content: post.description,
-        },
-        {
-          property: 'og:url',
-          content: url,
-        },
-        {
-          property: 'og:site_name',
-          content: site.shortTitle,
-        },
-        {
-          property: 'article:published_time',
-          content: post.date,
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:title',
-          content: post.title,
-        },
-        {
-          name: 'twitter:description',
-          content: post.description,
-        },
-      ],
+      meta: socialMeta({
+        title,
+        socialTitle: post.title,
+        description: post.description,
+        url,
+        type: 'article',
+        ogPath: `blog/${post.slug}`,
+        imageAlt: post.title,
+        publishedTime: post.date,
+        author: site.shortTitle,
+      }),
       links: [
         {
           rel: 'canonical',
@@ -93,6 +52,7 @@ export const Route = createFileRoute('/blog/$slug')({
             datePublished: post.date,
             dateModified: post.date,
             url,
+            image: `${site.origin}/og/blog/${post.slug}.png`,
             author: {
               '@type': 'Person',
               name: site.shortTitle,

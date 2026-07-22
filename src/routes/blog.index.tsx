@@ -1,6 +1,7 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 
 import { formatPostDate, posts } from '../blog/posts'
+import { socialMeta } from '../lib/social-meta'
 import { site } from '../site'
 
 const blogUrl = `${site.origin}/blog`
@@ -10,51 +11,14 @@ const blogDescription =
 
 export const Route = createFileRoute('/blog/')({
   head: () => ({
-    meta: [
-      {
-        title: blogTitle,
-      },
-      {
-        name: 'description',
-        content: blogDescription,
-      },
-      {
-        name: 'robots',
-        content: 'index, follow',
-      },
-      {
-        property: 'og:type',
-        content: 'website',
-      },
-      {
-        property: 'og:title',
-        content: blogTitle,
-      },
-      {
-        property: 'og:description',
-        content: blogDescription,
-      },
-      {
-        property: 'og:url',
-        content: blogUrl,
-      },
-      {
-        property: 'og:site_name',
-        content: site.shortTitle,
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary',
-      },
-      {
-        name: 'twitter:title',
-        content: blogTitle,
-      },
-      {
-        name: 'twitter:description',
-        content: blogDescription,
-      },
-    ],
+    meta: socialMeta({
+      title: blogTitle,
+      description: blogDescription,
+      url: blogUrl,
+      type: 'website',
+      ogPath: 'blog',
+      imageAlt: blogTitle,
+    }),
     links: [
       {
         rel: 'canonical',

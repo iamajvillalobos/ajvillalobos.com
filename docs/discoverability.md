@@ -10,6 +10,13 @@ Use this after the Cloudflare deployment is live at `https://ajvillalobos.com`.
 - Confirm `https://ajvillalobos.com/robots.txt` includes `Sitemap: https://ajvillalobos.com/sitemap.xml`.
 - Confirm `https://ajvillalobos.com/llms.txt` returns plain text.
 - Confirm `https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf` returns a valid PDF.
+- Confirm SSR HTML includes `og:image` and `twitter:card` = `summary_large_image`.
+- Confirm static OG cards exist as PNG:
+  - `https://ajvillalobos.com/og/home.png`
+  - `https://ajvillalobos.com/og/blog.png`
+  - `https://ajvillalobos.com/og/blog/<slug>.png`
+- After adding a post, run `mise exec -- pnpm generate-og` (also runs on `pnpm build`).
+- Validate link previews with [Twitter/X Card Validator](https://cards-dev.twitter.com/validator) or [opengraph.xyz](https://www.opengraph.xyz/).
 - Validate JSON-LD with Google's Rich Results Test or Schema Markup Validator.
 
 ## Submission

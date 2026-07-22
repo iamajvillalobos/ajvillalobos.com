@@ -1,54 +1,18 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 
+import { socialMeta } from '../lib/social-meta'
 import { site, structuredData } from '../site'
 
 export const Route = createFileRoute('/')({
   head: () => ({
-    meta: [
-      {
-        title: site.title,
-      },
-      {
-        name: 'description',
-        content: site.description,
-      },
-      {
-        name: 'robots',
-        content: 'index, follow',
-      },
-      {
-        property: 'og:type',
-        content: 'profile',
-      },
-      {
-        property: 'og:title',
-        content: site.title,
-      },
-      {
-        property: 'og:description',
-        content: site.socialDescription,
-      },
-      {
-        property: 'og:url',
-        content: site.canonicalUrl,
-      },
-      {
-        property: 'og:site_name',
-        content: site.shortTitle,
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary',
-      },
-      {
-        name: 'twitter:title',
-        content: site.title,
-      },
-      {
-        name: 'twitter:description',
-        content: site.socialDescription,
-      },
-    ],
+    meta: socialMeta({
+      title: site.title,
+      description: site.description,
+      url: site.canonicalUrl,
+      type: 'profile',
+      ogPath: 'home',
+      imageAlt: `${site.shortTitle} — Senior Ruby on Rails Engineer`,
+    }),
     links: [
       {
         rel: 'canonical',
