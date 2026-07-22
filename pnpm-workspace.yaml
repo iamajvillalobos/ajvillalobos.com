@@ -3,4 +3,4 @@ allowBuilds:
   sharp: false
   workerd: true
 minimumReleaseAgeExclude:
-  - nitro-nightly@3.0.1-20260707-141752-f3a1aa6d
+  - nitro-nightly@3.0.1-20260717-080150-bfc2f5ef

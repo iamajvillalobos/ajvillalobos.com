@@ -13,6 +13,7 @@ const config = defineConfig({
     devtools(),
     nitro({
       preset: 'cloudflare-module',
+      devServer: { runner: 'node-worker' },
       rollupConfig: { external: [/^@sentry\//] },
     }),
     tailwindcss(),
