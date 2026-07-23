@@ -81,15 +81,22 @@ function ResumePage() {
           <h3>Lavanda</h3>
           <p className="role">Senior Ruby on Rails Developer &middot; UK, remote</p>
           <p>
-            I build booking and leasing features for a property management
-            platform used by build-to-rent and co-living operators. Recent work
-            includes making its DocuSign integration more flexible by moving
-            agreement preparation from application-defined prefilled fields to
-            Sender Fields configured by clients, and building booking-import
-            tooling for onboarding new clients. I also work directly with
-            product and implementation managers to investigate questions,
-            clarify technical constraints, and help resolve client concerns.
+            I work on booking and leasing features for a property management
+            platform used by build-to-rent and co-living operators.
           </p>
+          <ul className="highlights">
+            <li>
+              Made its DocuSign integration more flexible by replacing
+              application-defined prefilled fields with client-configured Sender
+              Fields.
+            </li>
+            <li>Built booking-import tooling for onboarding new clients.</li>
+            <li>
+              Work directly with product and implementation managers to
+              investigate questions, clarify technical constraints, and resolve
+              client concerns.
+            </li>
+          </ul>
         </div>
 
         <div className="when">2024&ndash;25</div>
@@ -189,14 +196,24 @@ function ResumePage() {
           </h3>
           <p>
             My primary self-funded product: payroll, attendance, and scheduling
-            software for Philippine businesses. I designed, built, operate, and
-            support it end to end. The platform has recorded more than 17,000
-            attendance entries and generated over 1,300 payslips across 89
-            finalized payroll runs, representing more than ₱6.9 million in gross
-            payroll calculations. It handles Philippine requirements including
-            government contributions, withholding tax, holiday pay, scheduling,
-            facial-verification attendance, and employee self-service.
+            software for Philippine businesses.
           </p>
+          <ul className="highlights">
+            <li>
+              My work spans product decisions, engineering, infrastructure, and
+              customer support.
+            </li>
+            <li>
+              The platform has recorded more than 17,000 attendance entries and
+              generated over 1,300 payslips across 89 finalized payroll runs,
+              representing more than ₱6.9 million in gross payroll calculations.
+            </li>
+            <li>
+              Handles Philippine requirements including government
+              contributions, withholding tax, holiday pay, scheduling,
+              facial-verification attendance, and employee self-service.
+            </li>
+          </ul>
         </div>
 
         <div className="when">Healthtech</div>
