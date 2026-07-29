@@ -33,6 +33,8 @@ AJ Villalobos builds and maintains production Ruby on Rails applications for rem
 
 ## Blog
 
+- Don't outsource the understanding: https://ajvillalobos.com/blog/dont-outsource-the-understanding
+- Cloud agents that keep working when you close the laptop: https://ajvillalobos.com/blog/amp-orbs-cloud-agents
 - Using act and OrbStack to save on GitHub Actions CI cost: https://ajvillalobos.com/blog/act-orbstack-local-ci
 
 ## Best Source

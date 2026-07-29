@@ -1,11 +1,14 @@
 import { actOrbstackLocalCi } from './posts/act-orbstack-local-ci'
 import { ampOrbsCloudAgents } from './posts/amp-orbs-cloud-agents'
+import { dontOutsourceTheUnderstanding } from './posts/dont-outsource-the-understanding'
 import type { BlogPost } from './types'
 
 // When dates tie, earlier array entries sort first (newest-first list).
-export const posts: BlogPost[] = [ampOrbsCloudAgents, actOrbstackLocalCi].sort(
-  (a, b) => b.date.localeCompare(a.date),
-)
+export const posts: BlogPost[] = [
+  dontOutsourceTheUnderstanding,
+  ampOrbsCloudAgents,
+  actOrbstackLocalCi,
+].sort((a, b) => b.date.localeCompare(a.date))
 
 export function getPost(slug: string): BlogPost | undefined {
   return posts.find((post) => post.slug === slug)
