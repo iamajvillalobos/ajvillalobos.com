@@ -1,16 +1,16 @@
 export const site = {
   origin: 'https://ajvillalobos.com',
   canonicalUrl: 'https://ajvillalobos.com/',
-  title: 'AJ Villalobos, Senior Ruby on Rails Engineer',
+  title: 'AJ Villalobos, Senior Product Engineer',
   shortTitle: 'AJ Villalobos',
   description:
-    'AJ Villalobos is a senior Ruby on Rails engineer in Iloilo City, Philippines with twelve years of production experience and AI-assisted development workflows.',
+    'AJ Villalobos is a senior product engineer in Iloilo City, Philippines with twelve years of Ruby on Rails experience building and shipping production software.',
   socialDescription:
-    'Senior Ruby on Rails engineer with twelve years of production Rails experience, now shipping with AI-assisted workflows.',
+    'Senior product engineer with twelve years of Ruby on Rails experience shipping production software for remote product teams.',
   email: 'hello@ajvillalobos.com',
-  resumePath: '/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf',
+  resumePath: '/aj-villalobos-senior-product-engineer-resume.pdf',
   resumeUrl:
-    'https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf',
+    'https://ajvillalobos.com/aj-villalobos-senior-product-engineer-resume.pdf',
   githubUrl: 'https://github.com/iamajvillalobos',
   linkedinUrl: 'https://www.linkedin.com/in/aj-villalobos/',
   arqenUrl: 'https://arqen.dev',
@@ -45,7 +45,7 @@ export const structuredData = {
       name: 'AJ Villalobos',
       url: site.canonicalUrl,
       email: `mailto:${site.email}`,
-      jobTitle: 'Senior Ruby on Rails Engineer',
+      jobTitle: 'Senior Product Engineer',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Iloilo City',
@@ -57,13 +57,14 @@ export const structuredData = {
       },
       hasOccupation: {
         '@type': 'Occupation',
-        name: 'Senior Ruby on Rails Engineer',
+        name: 'Senior Product Engineer',
         occupationalCategory: 'Software Developer',
         skills:
-          'Ruby on Rails, GraphQL, TypeScript, Preact, Vue, Next.js, AI-assisted development, Claude Code, agentic development workflows',
+          'Ruby on Rails, product engineering, GraphQL, TypeScript, Preact, Vue, Next.js, Claude Code, agentic development workflows',
       },
       knowsAbout: [
         'Ruby on Rails',
+        'product engineering',
         'production Rails applications',
         'AI-assisted software development',
         'Claude Code workflows',

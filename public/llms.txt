@@ -1,17 +1,17 @@
 # AJ Villalobos
 
-> Senior Ruby on Rails engineer in Iloilo City, Philippines with twelve years of production Rails experience and AI-assisted development workflows.
+> Senior product engineer in Iloilo City, Philippines with twelve years of Ruby on Rails experience shipping production software.
 
 Canonical profile: https://ajvillalobos.com/
 Blog: https://ajvillalobos.com/blog
-Resume PDF: https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf
+Resume PDF: https://ajvillalobos.com/aj-villalobos-senior-product-engineer-resume.pdf
 Email: mailto:hello@ajvillalobos.com
 GitHub: https://github.com/iamajvillalobos
 LinkedIn: https://www.linkedin.com/in/aj-villalobos/
 
 ## Summary
 
-AJ Villalobos builds and maintains production Ruby on Rails applications for remote product teams. His experience spans fintech, healthtech, SaaS, aged care, childcare, property management, and Philippine small business software. Current work combines senior Rails engineering with AI-assisted development practices using Claude Code, custom skills, self-verifying agent loops, and parallel agents in git worktrees.
+AJ Villalobos is a senior product engineer who builds and ships production Ruby on Rails applications for remote product teams. His experience spans fintech, healthtech, SaaS, aged care, childcare, property management, and Philippine small business software. Current work combines product ownership with AI-assisted development practices using Claude Code, custom skills, self-verifying agent loops, and parallel agents in git worktrees.
 
 ## Primary Topics
 

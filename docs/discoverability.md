@@ -9,7 +9,7 @@ Use this after the Cloudflare deployment is live at `https://ajvillalobos.com`.
 - Confirm `https://ajvillalobos.com/blog` and a sample post return SSR HTML.
 - Confirm `https://ajvillalobos.com/robots.txt` includes `Sitemap: https://ajvillalobos.com/sitemap.xml`.
 - Confirm `https://ajvillalobos.com/llms.txt` returns plain text.
-- Confirm `https://ajvillalobos.com/aj-villalobos-senior-ruby-on-rails-engineer-resume.pdf` returns a valid PDF.
+- Confirm `https://ajvillalobos.com/aj-villalobos-senior-product-engineer-resume.pdf` returns a valid PDF.
 - Confirm SSR HTML includes `og:image` and `twitter:card` = `summary_large_image`.
 - Confirm static OG cards exist as PNG:
   - `https://ajvillalobos.com/og/home.png`

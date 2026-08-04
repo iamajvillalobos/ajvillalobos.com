@@ -1,0 +1,90 @@
+AJ Villalobos
+Senior Product Engineer | Ruby on Rails
+hello@ajvillalobos.com | +63 917 676 0513 | Iloilo City, Philippines | ajvillalobos.com | LinkedIn | GitHub
+
+PROFESSIONAL SUMMARY
+Product engineer with 12 years of Ruby on Rails experience. Comfortable owning the full loop: talking to customers, shaping the
+product, shipping features, and judging what is worth building next. Has done that inside remote product teams in the US, UK, and
+Australia, and outside them by launching side products, getting real users, and selling one of them. Works across fintech, aged care,
+childcare, property management, and Philippine SME software. Uses modern AI tooling to move faster without lowering the bar on
+tests, readable diffs, maintainable architecture, or ownership.
+WORK EXPERIENCE
+Lavanda                                                                                                        Oct. 2025 - Present
+Senior Ruby on Rails Developer                                                                            United Kingdom, Remote
+Cloud-based property management platform for institutional operators of student housing, multifamily, co-living, and serviced
+apartments.
+- Own booking and leasing workflows that help operators move reservations, leases, and tenant operations through production with
+  less manual coordination.
+- Maintain and extend DocuSign lease-signing flows, including Sender Fields and booking-signing support used in live tenant
+  onboarding.
+- Build booking-import tooling for new-client data migration and operational onboarding.
+- Use Claude Code and agent workflows day to day, with self-verification and parallel worktrees, so speed does not outrun product
+  quality.
+ShiftCare                                                                                                    May 2024 - Oct. 2025
+Ruby on Rails Engineer                                                                                            Sydney, Australia
+Aged-care platform for providers managing customer-facing care workflows and internal operations.
+- Delivered customer-facing and internal aged-care workflows on Rails APIs and Vue.
+- Balanced usability improvements against backend maintainability and the constraints of a live care-operations product.
+Radiopaedia.org                                                                                            Jun. 2023 - Jan. 2024
+Ruby on Rails Developer                                                                                                 Australia
+Medical education platform used by clinicians and students worldwide.
+- Improved mobile UX and key page layouts in a Rails app with TypeScript and Preact components.
+- Integrated frontend-heavy changes with existing Rails API behavior without breaking production patterns.
+Kangarootime                                                                                                  Jul. 2019 - May 2023
+Ruby on Rails Developer                                                                                        United States, Remote
+Childcare-center management platform used by centers across the United States.
+- Maintained and extended a long-lived legacy platform through multi-year product and operational change.
+- Refactored a major status-tracking model so centers could identify child status more clearly and unlock later feature work.
+- Built COVID screening and onboarding features that helped centers adapt daily operations during a high-change period.
+BloomSolutions                                                                                          Nov. 2017 - Dec. 2020
+Software Engineer                                                                                           Makati, Philippines
+Fintech studio building remittance and related financial products.
+- Built features for BloomRemit, a cryptocurrency-enabled remittance platform that moved over $120M in customer transactions.
+- Emphasized tested, maintainable service patterns for money movement and compliance-oriented workflows.
+- Led design work for BloomICO and BloomTeller, including wireframes, user flows, and scalable UI approaches.
+Tanda                                                                                                        Jun. 2017 - Jan. 2018
+Software Developer                                                                                                       Philippines
+- Built POS API integrations around the core workforce product.
+- Created sales productivity tools that connected multiple apps, synchronized data, and automated team notifications via webhooks.
+- Extended product workflows outside the main platform through a Facebook Messenger bot.
+Aelogica                                                                                                  Jun. 2016 - Jun. 2017
+Software Developer                                                                                           Taguig, Philippines
+- Built backend systems for apartment and self-storage booking platforms using Rails, PostgreSQL, Sidekiq, AWS, and
+  service-oriented patterns.
+- Built internal applications and private Ruby gems distributed through a private RubyGems-style system.
+
+Proudcloud                                                                                            Aug. 2015 - Feb. 2016
+Software Developer                                                                                                 Philippines
+- Worked across Rails API and Ember during a migration from a Rails monolith to a SPA connecting companies with artists and
+  production studios.
+YouSource                                                                                                Sep. 2014 - Aug. 2015
+Software Developer                                                                                                  Philippines
+- Built Rails features for Cloudhealth, a pre-employment workflow platform, and helped migrate frontend work toward Angular
+  backed by Rails APIs.
+
+SELECTED PROJECTS
+Privacy-First Link Shortener                                                                                  Acquired Side Project
+- Built a Bitly alternative focused on GDPR compliance, launched it as a paid product, found early users, and later sold it to one of
+  them.
+- Owned the full loop from product idea through packaging, customer feedback, and exit.
+Arqen.dev                                                                                        Founder, Philippine SME Software
+- Building a small software studio for Philippine businesses around inventory, payroll, attendance, scheduling, prescriptions, and
+  compliance-heavy workflows.
+- Shipping KeepTrack.ph (inventory), Timekeep.ph (payroll and attendance), and SigRx.app (digital prescriptions), shaped around
+  real SME operating constraints.
+Clover Ruby Gem                                                                                    Open Source Integration
+- Created an open-source Ruby wrapper for a major POS REST API; the archived gem was forked and used in production
+  integrations.
+
+EDUCATION
+John B. Lacson Foundation Maritime University                                                                           2010 - 2013
+Bachelor of Science in Information Technology, Web Development                                                            Iloilo City
+TECHNOLOGIES
+Backend: Ruby, Ruby on Rails, GraphQL, REST APIs, service objects, background jobs, Sidekiq, PostgreSQL, API design, legacy
+modernization
+Frontend: TypeScript, JavaScript, Vue, Preact, Ember, Angular, HTML, CSS, mobile-friendly UX
+Systems: AWS, Heroku, integrations, webhooks, POS APIs, remittance workflows, audit trails, compliance-oriented business
+software
+Product & delivery: customer discovery, product design, packaging paid tools, integrations, workflow automation
+AI tooling: Claude Code, custom skills, self-verifying agent loops, parallel agents in git worktrees
+

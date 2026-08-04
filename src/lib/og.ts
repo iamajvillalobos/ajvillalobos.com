@@ -20,7 +20,7 @@ export function resolveOgPayload(pathname: string): OgPayload | null {
       id: 'home',
       title: site.shortTitle,
       description: site.socialDescription,
-      meta: 'Senior Ruby on Rails Engineer',
+      meta: 'Senior Product Engineer',
     }
   }
 

@@ -11,7 +11,7 @@ export const Route = createFileRoute('/')({
       url: site.canonicalUrl,
       type: 'profile',
       ogPath: 'home',
-      imageAlt: `${site.shortTitle} — Senior Ruby on Rails Engineer`,
+      imageAlt: `${site.shortTitle} — Senior Product Engineer`,
     }),
     links: [
       {
@@ -50,7 +50,7 @@ function ResumePage() {
         <h1 className="name">
           AJ Villalobos<span className="dot">.</span>
         </h1>
-        <p className="tagline">Senior Ruby on Rails Engineer</p>
+        <p className="tagline">Senior Product Engineer</p>
         <nav className="site-nav" aria-label="Site">
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
@@ -63,14 +63,14 @@ function ResumePage() {
       </header>
 
       <p className="intro">
-        I&rsquo;m a senior Ruby on Rails engineer with <em>twelve years</em> of
-        experience building production software for fintech, healthtech, and
-        SaaS teams across the US, UK, and Australia. I work closely with
-        engineering and product teams to turn operational needs into reliable
-        software. While Rails is my primary stack, I&rsquo;m comfortable getting
-        oriented in other languages and use AI coding tools as a practical part
-        of development. I&rsquo;m open to full-time senior engineering
-        opportunities, especially Rails and backend product work.
+        I&rsquo;m a senior product engineer with <em>twelve years</em> of Ruby
+        on Rails experience building production software for fintech,
+        healthtech, and SaaS teams across the US, UK, and Australia. I work
+        closely with engineering and product teams to turn operational needs
+        into reliable software. Rails is my primary stack, and I use AI coding
+        tools as a practical part of development. I&rsquo;m open to full-time
+        senior product engineering opportunities, especially Rails and backend
+        product work.
       </p>
 
       <section id="work" className="sec">

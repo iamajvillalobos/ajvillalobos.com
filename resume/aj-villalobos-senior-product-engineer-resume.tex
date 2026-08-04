@@ -1,0 +1,182 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.48in]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+
+\defaultfontfeatures{Ligatures=NoCommon}
+\setmainfont{Times New Roman}[
+  UprightFont = *,
+  BoldFont = * Bold,
+  ItalicFont = * Italic,
+  BoldItalicFont = * Bold Italic
+]
+
+\hypersetup{
+  pdftitle={AJ Villalobos - Senior Product Engineer Resume},
+  pdfauthor={AJ Villalobos},
+  pdfsubject={Senior Product Engineer resume},
+  pdfkeywords={Product engineer, Ruby on Rails, Rails, GraphQL, PostgreSQL, Sidekiq, TypeScript, Claude Code}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\raggedright
+\raggedbottom
+\setlist[itemize]{
+  leftmargin=1.05em,
+  topsep=2pt,
+  itemsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt,
+  after=\vspace{3pt},
+  label=\textbullet
+}
+\setlist[itemize,2]{leftmargin=1.35em, topsep=1pt, itemsep=1pt, label=\(\circ\)}
+
+\newcommand{\sectionheading}[1]{%
+  \vspace{8pt}
+  {\large\bfseries\MakeUppercase{#1}}\par
+  \vspace{1pt}
+  \hrule height 0.6pt
+  \vspace{4pt}
+}
+
+\newcommand{\roleentry}[4]{%
+  \Needspace{5\baselineskip}%
+  \textbf{#1} \hfill \textbf{#2}\\
+  \textit{#3} \hfill \textit{#4}\\[-2pt]
+}
+
+\newcommand{\roleblurb}[1]{%
+  #1\\[-2pt]
+}
+
+\newcommand{\projectentry}[2]{%
+  \Needspace{3\baselineskip}%
+  \textbf{#1} \hfill \textit{#2}\\[-2pt]
+}
+
+\begin{document}
+\fontsize{10.25}{11.6}\selectfont
+
+{\fontsize{24}{26}\selectfont\bfseries AJ Villalobos}\par
+\vspace{1pt}
+{\large Senior Product Engineer \textbar{} Ruby on Rails}\par
+\vspace{2pt}
+hello@ajvillalobos.com
+\hspace{0.4em}\textbar{}\hspace{0.4em}
++63 917 676 0513
+\hspace{0.4em}\textbar{}\hspace{0.4em}
+Iloilo City, Philippines
+\hspace{0.4em}\textbar{}\hspace{0.4em}
+ajvillalobos.com
+\hspace{0.4em}\textbar{}\hspace{0.4em}
+LinkedIn
+\hspace{0.4em}\textbar{}\hspace{0.4em}
+GitHub
+\vspace{3pt}
+\hrule height 0.6pt
+
+\sectionheading{Professional Summary}
+Product engineer with 12 years of Ruby on Rails experience. Comfortable owning the full loop: talking to customers, shaping the product, shipping features, and judging what is worth building next. Has done that inside remote product teams in the US, UK, and Australia, and outside them by launching side products, getting real users, and selling one of them. Works across fintech, aged care, childcare, property management, and Philippine SME software. Uses modern AI tooling to move faster without lowering the bar on tests, readable diffs, maintainable architecture, or ownership.
+
+\sectionheading{Work Experience}
+\roleentry{Lavanda}{Oct. 2025 - Present}{Senior Ruby on Rails Developer}{United Kingdom, Remote}
+\roleblurb{Cloud-based property management platform for institutional operators of student housing, multifamily, co-living, and serviced apartments.}
+\begin{itemize}
+  \item Own booking and leasing workflows that help operators move reservations, leases, and tenant operations through production with less manual coordination.
+  \item Maintain and extend DocuSign lease-signing flows, including Sender Fields and booking-signing support used in live tenant onboarding.
+  \item Build booking-import tooling for new-client data migration and operational onboarding.
+  \item Use Claude Code and agent workflows day to day, with self-verification and parallel worktrees, so speed does not outrun product quality.
+\end{itemize}
+
+\roleentry{ShiftCare}{May 2024 - Oct. 2025}{Ruby on Rails Engineer}{Sydney, Australia}
+\roleblurb{Aged-care platform for providers managing customer-facing care workflows and internal operations.}
+\begin{itemize}
+  \item Delivered customer-facing and internal aged-care workflows on Rails APIs and Vue.
+  \item Balanced usability improvements against backend maintainability and the constraints of a live care-operations product.
+\end{itemize}
+
+\roleentry{Radiopaedia.org}{Jun. 2023 - Jan. 2024}{Ruby on Rails Developer}{Australia}
+\roleblurb{Medical education platform used by clinicians and students worldwide.}
+\begin{itemize}
+  \item Improved mobile UX and key page layouts in a Rails app with TypeScript and Preact components.
+  \item Integrated frontend-heavy changes with existing Rails API behavior without breaking production patterns.
+\end{itemize}
+
+\roleentry{Kangarootime}{Jul. 2019 - May 2023}{Ruby on Rails Developer}{United States, Remote}
+\roleblurb{Childcare-center management platform used by centers across the United States.}
+\begin{itemize}
+  \item Maintained and extended a long-lived legacy platform through multi-year product and operational change.
+  \item Refactored a major status-tracking model so centers could identify child status more clearly and unlock later feature work.
+  \item Built COVID screening and onboarding features that helped centers adapt daily operations during a high-change period.
+\end{itemize}
+
+\roleentry{BloomSolutions}{Nov. 2017 - Dec. 2020}{Software Engineer}{Makati, Philippines}
+\roleblurb{Fintech studio building remittance and related financial products.}
+\begin{itemize}
+  \item Built features for BloomRemit, a cryptocurrency-enabled remittance platform that moved over \$120M in customer transactions.
+  \item Emphasized tested, maintainable service patterns for money movement and compliance-oriented workflows.
+  \item Led design work for BloomICO and BloomTeller, including wireframes, user flows, and scalable UI approaches.
+\end{itemize}
+
+\roleentry{Tanda}{Jun. 2017 - Jan. 2018}{Software Developer}{Philippines}
+\begin{itemize}
+  \item Built POS API integrations around the core workforce product.
+  \item Created sales productivity tools that connected multiple apps, synchronized data, and automated team notifications via webhooks.
+  \item Extended product workflows outside the main platform through a Facebook Messenger bot.
+\end{itemize}
+
+\roleentry{Aelogica}{Jun. 2016 - Jun. 2017}{Software Developer}{Taguig, Philippines}
+\begin{itemize}
+  \item Built backend systems for apartment and self-storage booking platforms using Rails, PostgreSQL, Sidekiq, AWS, and service-oriented patterns.
+  \item Built internal applications and private Ruby gems distributed through a private RubyGems-style system.
+\end{itemize}
+
+\roleentry{Proudcloud}{Aug. 2015 - Feb. 2016}{Software Developer}{Philippines}
+\begin{itemize}
+  \item Worked across Rails API and Ember during a migration from a Rails monolith to a SPA connecting companies with artists and production studios.
+\end{itemize}
+
+\roleentry{YouSource}{Sep. 2014 - Aug. 2015}{Software Developer}{Philippines}
+\begin{itemize}
+  \item Built Rails features for Cloudhealth, a pre-employment workflow platform, and helped migrate frontend work toward Angular backed by Rails APIs.
+\end{itemize}
+
+\sectionheading{Selected Projects}
+\projectentry{Privacy-First Link Shortener}{Acquired Side Project}
+\begin{itemize}
+  \item Built a Bitly alternative focused on GDPR compliance, launched it as a paid product, found early users, and later sold it to one of them.
+  \item Owned the full loop from product idea through packaging, customer feedback, and exit.
+\end{itemize}
+
+\projectentry{Arqen.dev}{Founder, Philippine SME Software}
+\begin{itemize}
+  \item Building a small software studio for Philippine businesses around inventory, payroll, attendance, scheduling, prescriptions, and compliance-heavy workflows.
+  \item Shipping KeepTrack.ph (inventory), Timekeep.ph (payroll and attendance), and SigRx.app (digital prescriptions), shaped around real SME operating constraints.
+\end{itemize}
+
+\projectentry{Clover Ruby Gem}{Open Source Integration}
+\begin{itemize}
+  \item Created an open-source Ruby wrapper for a major POS REST API; the archived gem was forked and used in production integrations.
+\end{itemize}
+
+\sectionheading{Education}
+\textbf{John B. Lacson Foundation Maritime University} \hfill \textbf{2010 - 2013}\\
+\textit{Bachelor of Science in Information Technology, Web Development} \hfill \textit{Iloilo City}
+
+\sectionheading{Technologies}
+\textbf{Backend:} Ruby, Ruby on Rails, GraphQL, REST APIs, service objects, background jobs, Sidekiq, PostgreSQL, API design, legacy modernization\\
+\textbf{Frontend:} TypeScript, JavaScript, Vue, Preact, Ember, Angular, HTML, CSS, mobile-friendly UX\\
+\textbf{Systems:} AWS, Heroku, integrations, webhooks, POS APIs, remittance workflows, audit trails, compliance-oriented business software\\
+\textbf{Product \& delivery:} customer discovery, product design, packaging paid tools, integrations, workflow automation\\
+\textbf{AI tooling:} Claude Code, custom skills, self-verifying agent loops, parallel agents in git worktrees
+
+\end{document}
